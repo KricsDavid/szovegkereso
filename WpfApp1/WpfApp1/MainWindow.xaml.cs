@@ -61,5 +61,20 @@ namespace WpfApp1
                 fajlIro.Close();
             }
         }
+
+        private void btnValogat_Click(object sender, RoutedEventArgs e)
+        {
+            lbModositott.Items.Clear();
+            foreach(Object aktObjektum in lbForras.Items)
+            {
+                if (chkNincsKulonbseg.IsChecked==true)
+                {
+                    if (aktObjektum.ToString().ToLower().Contains(txtSz))
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }

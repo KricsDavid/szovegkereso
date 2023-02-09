@@ -12,7 +12,9 @@
             <ColumnDefinition></ColumnDefinition></Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition/>
+
         </Grid.RowDefinitions>
         <ListBox x:Name="lbForras"
                  Background="LightGreen"
@@ -24,13 +26,25 @@
         <Button x:Name="btnBetolt"
                 Grid.Row="1"
                 Margin="5"
-                Content="Betölt" Click="btnBetolt_Click"></Button>
+                Content="Betölt"></Button>
         <Button x:Name="btnMentes"
                 Grid.Row="1"
                 Grid.Column="1"
                 Margin="5"
-                Content="Ment fájlba" Click="btnMentes_Click"></Button>
-        
+                Content="Ment fájlba"></Button>
+        <Border
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Background="Orange"
+            CornerRadius="10"
+            Margin="5"
+            Padding="10"
+            BorderThickness="5"
+            BorderBrush="Red">
+            <StackPanel>
+                
+            </StackPanel>
+        </Border>
         
         
     </Grid>
